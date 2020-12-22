@@ -1,0 +1,142 @@
+#banner{
+	height: 10vw;
+  width: 100%;
+  border:5px,solid,#38F2FE;
+}
+#main-nav {
+    margin-top: 2px;
+}
+
+#main-nav a {
+    color: #f6f7f8;
+    background:#1B21F9;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+#main-nav a:hover {
+    background: #1B21C7;
+}
+
+#main-nav ul {
+    list-style: none;
+    display: flex;
+    padding-left:0px;
+}
+
+#main-nav li {
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+#main-nav li:hover .submenu > li {
+    display: block;
+    flex-direction: column;
+    top: 0px;
+}
+
+.submenu li {
+    display: none;
+    position: absolute;
+    top: 0px;
+}
+
+.submenu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+}
+
+.submenu li {
+    position: relative;
+}
+
+.submenu li:hover .submenu-2 li {
+    display: block;
+}
+
+.submenu-2 li {
+    display: none;
+}
+
+.submenu-2 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0px;
+    left: 75%;
+    width: 250px;
+}
+
+.box {
+    flex-grow: 2;
+    background: #1B21F9;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border: 5px solid #38F2FE;
+}
+
+body{
+	background:#000000;
+	color:#ffffff;
+}
+canvas {
+    border: thin solid #38F2FE;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 0%);
+}
+
+
+.flexbox-container {
+    display: flex;
+    border: 5px solid #38F2FE;
+    margin-bottom: 20px;
+    align-content: space-around;
+    justify-content: center;
+}
+
+.flexbox-item {
+    margin: 5px;
+    padding: 10px;
+    background-color: #DFE9EE;
+}
+
+.flexbox-item-1 {
+    background-color:#1B21F9;
+    font-family: ubuntu;
+    font-size: 20px;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.flexbox-item-2 {
+    background-color:#1B21F9;
+    align-self: center;
+    padding: 25px;
+    flex-grow:1;
+}
+
+.flexbox-item-3 {
+    background-color:#1B21F9;
+    padding: 20px;
+    flex-grow:1;
+}
+
+/*js file formatting*/
+ canvas {
+    border: thin solid #38F2FE;
+    position: relative;
+    margin: 1px;
+    left: 50%;
+    top: 50%; 
+    z-index: -1;
+}
